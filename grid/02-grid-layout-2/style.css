@@ -8,11 +8,15 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  resize: both;
+  overflow: auto;
+  background-color: gray;
+  margin: 10px;
 
   font-size: 50px;
   display: grid;
-  gap: 15px;
-  grid-template: 1.5em 1.5em 7.5em 1.5em / 7em 21em;
+  gap: auto;
+  grid-template: 1fr 1fr 5fr 1fr / 5fr 15fr;
   grid-template-areas: "header header" "sidebar nav" "sidebar article" "footer footer";
 }
 
